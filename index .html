@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>095李欣怡</title>
+    <link rel="stylesheet" href="./素材/iconfont (2).css">
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "微软雅黑";
+        }
+        body {
+            background-color: #ffb6c1;
+            background-image: url(./nybanner001.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .yijihezi {
+            width: 160px;
+            margin: 80px 0 0 80px;
+        }
+        .yijihezi > li {
+            position: relative;
+            width: 160px;
+            height: 60px;
+            line-height: 60px;
+            background-color: rgba(255,255,255,0.7);
+            margin-bottom: 4px;
+            padding-left: 16px;
+            transition: all 300ms linear;
+        }
+        .yijihezi > li:hover {
+            background-color: #fff;
+            transform: scale(1.05);
+        }
+        .yijihezi > li > a {
+            color: #000;
+            font-size: 18px;
+        }
+        .iconfont {
+            margin-right: 8px;
+            font-size: 20px;
+            color: #bb1313;
+        }
+        /* 二级菜单：固定宽度，初始高度为 0，纵向滑出 */
+        .yijihezi > li > ul {
+            position: absolute;
+            left: 160px;
+            top: 0;
+            width: 160px;
+            height: 0;
+            overflow: hidden;
+            background-color: rgba(255,255,255,0.8);
+            transition: all 300ms linear;
+        }
+        /* 子菜单项块级显示，上下竖排堆叠 */
+        .yijihezi > li > ul > li {
+            height: 60px;
+            line-height: 60px;
+            padding-left: 16px;
+        }
+        .yijihezi > li > ul > li a {
+            color: #000;
+            font-size: 16px;
+        }
+        /* hover 时高度展开：3 个子项 × 60px = 180px */
+        .yijihezi > li:hover > ul {
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="yijihezi">
+        <li>
+            <a href=" "><i class="iconfont icon-hangli-jpao-203"></i>机票购买</a >
+            <ul class="jipiaogoumai">
+                <li><a href="#">单程票</a ></li>
+                <li><a href="#">往返票</a ></li>
+                <li><a href="#">联程票</a ></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-shashaduji-207"></i>度假方式</a >
+            <ul class="dujiafangshi">
+                <li><a href="#">跟团游</a ></li>
+                <li><a href="#">自由行</a ></li>
+                <li><a href="#">半自由行</a ></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont icon-guanguo-221"></i>游玩项目意向</a >
+            <ul class="youwanxiangmuyixiang">
+                <li><a href="#">户外徒步</a ></li>
+                <li><a href="#">海边冲浪</a ></li>
+                <li><a href="#">温泉疗养</a ></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
